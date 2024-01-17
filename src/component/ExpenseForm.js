@@ -22,15 +22,15 @@ const ExpenseForm = ({ addExpense }) => {
     <form onSubmit={handleSubmit}>
       <div>
         <label>Title:</label>
-        <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} />
+        <input required type="text" value={title} onChange={(e) => setTitle(e.target.value)} />
       </div>
       <div>
         <label>Amount:</label>
-        <input type="number" value={amount} onChange={(e) => setAmount(e.target.value)} />
+        <input required type="number" value={amount} onChange={(e) => setAmount(e.target.value)} />
       </div>
       <div>
         <label>Date:</label>
-        <input type="date" value={date} onChange={(e) => setDate(e.target.value)} />
+        <input required type="date" value={date} onChange={(e) => setDate(e.target.value)} />
       </div>
       <button type="submit">Add Expense</button>
     </form>
